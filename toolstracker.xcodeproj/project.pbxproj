@@ -12,11 +12,8 @@
 		211D46D91BDA0ACE00DCA324 /* TrackingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D46D81BDA0ACE00DCA324 /* TrackingModel.swift */; settings = {ASSET_TAGS = (); }; };
 		211D46DA1BDA0ACE00DCA324 /* TrackingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D46D81BDA0ACE00DCA324 /* TrackingModel.swift */; settings = {ASSET_TAGS = (); }; };
 		211D46DC1BDA0C1900DCA324 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211D46DB1BDA0C1900DCA324 /* Alamofire.framework */; };
-		211D46F01BDA0C6600DCA324 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211D46E11BDA0C2300DCA324 /* QRCodeReader.framework */; };
-		211D46F11BDA0C6600DCA324 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211D46E31BDA0C2300DCA324 /* SwiftyJSON.framework */; };
-		211D46F31BDA0CB300DCA324 /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 211D46E01BDA0C2300DCA324 /* Alamofire.framework.dSYM */; };
-		211D46F41BDA0CB300DCA324 /* QRCodeReader.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 211D46E21BDA0C2300DCA324 /* QRCodeReader.framework.dSYM */; };
-		211D46F51BDA0CB300DCA324 /* SwiftyJSON.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 211D46E41BDA0C2300DCA324 /* SwiftyJSON.framework.dSYM */; };
+		211D46F81BDA15B100DCA324 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D46F71BDA15B100DCA324 /* Config.swift */; settings = {ASSET_TAGS = (); }; };
+		211D46F91BDA15B100DCA324 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D46F71BDA15B100DCA324 /* Config.swift */; settings = {ASSET_TAGS = (); }; };
 		F2DBA4F71BCD9C9D0040C710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBA4F61BCD9C9D0040C710 /* AppDelegate.swift */; };
 		F2DBA4F91BCD9C9D0040C710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBA4F81BCD9C9D0040C710 /* ViewController.swift */; };
 		F2DBA4FC1BCD9C9D0040C710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DBA4FA1BCD9C9D0040C710 /* Main.storyboard */; };
@@ -50,9 +47,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				211D46F31BDA0CB300DCA324 /* Alamofire.framework.dSYM in CopyFiles */,
-				211D46F41BDA0CB300DCA324 /* QRCodeReader.framework.dSYM in CopyFiles */,
-				211D46F51BDA0CB300DCA324 /* SwiftyJSON.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,20 +56,7 @@
 		211D46D21BDA097200DCA324 /* ServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceRequest.swift; path = Utilities/ServiceRequest.swift; sourceTree = "<group>"; };
 		211D46D81BDA0ACE00DCA324 /* TrackingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackingModel.swift; path = Model/TrackingModel.swift; sourceTree = "<group>"; };
 		211D46DB1BDA0C1900DCA324 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		211D46DF1BDA0C2300DCA324 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		211D46E01BDA0C2300DCA324 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alamofire.framework.dSYM; sourceTree = "<group>"; };
-		211D46E11BDA0C2300DCA324 /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QRCodeReader.framework; sourceTree = "<group>"; };
-		211D46E21BDA0C2300DCA324 /* QRCodeReader.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = QRCodeReader.framework.dSYM; sourceTree = "<group>"; };
-		211D46E31BDA0C2300DCA324 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
-		211D46E41BDA0C2300DCA324 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
-		211D46E61BDA0C2300DCA324 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		211D46E71BDA0C2300DCA324 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alamofire.framework.dSYM; sourceTree = "<group>"; };
-		211D46E81BDA0C2300DCA324 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
-		211D46E91BDA0C2300DCA324 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
-		211D46EB1BDA0C2300DCA324 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		211D46EC1BDA0C2300DCA324 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alamofire.framework.dSYM; sourceTree = "<group>"; };
-		211D46ED1BDA0C2300DCA324 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
-		211D46EE1BDA0C2300DCA324 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
+		211D46F71BDA15B100DCA324 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Utilities/Config.swift; sourceTree = "<group>"; };
 		F2DBA4F31BCD9C9D0040C710 /* toolstracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toolstracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DBA4F61BCD9C9D0040C710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2DBA4F81BCD9C9D0040C710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,8 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				211D46F01BDA0C6600DCA324 /* QRCodeReader.framework in Frameworks */,
-				211D46F11BDA0C6600DCA324 /* SwiftyJSON.framework in Frameworks */,
 				211D46DC1BDA0C1900DCA324 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				211D46D21BDA097200DCA324 /* ServiceRequest.swift */,
+				211D46F71BDA15B100DCA324 /* Config.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -133,52 +113,6 @@
 				211D46D81BDA0ACE00DCA324 /* TrackingModel.swift */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		211D46DD1BDA0C2300DCA324 /* Build */ = {
-			isa = PBXGroup;
-			children = (
-				211D46DE1BDA0C2300DCA324 /* iOS */,
-				211D46E51BDA0C2300DCA324 /* Mac */,
-				211D46EA1BDA0C2300DCA324 /* watchOS */,
-			);
-			name = Build;
-			path = Carthage/Build;
-			sourceTree = "<group>";
-		};
-		211D46DE1BDA0C2300DCA324 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				211D46DF1BDA0C2300DCA324 /* Alamofire.framework */,
-				211D46E01BDA0C2300DCA324 /* Alamofire.framework.dSYM */,
-				211D46E11BDA0C2300DCA324 /* QRCodeReader.framework */,
-				211D46E21BDA0C2300DCA324 /* QRCodeReader.framework.dSYM */,
-				211D46E31BDA0C2300DCA324 /* SwiftyJSON.framework */,
-				211D46E41BDA0C2300DCA324 /* SwiftyJSON.framework.dSYM */,
-			);
-			path = iOS;
-			sourceTree = "<group>";
-		};
-		211D46E51BDA0C2300DCA324 /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-				211D46E61BDA0C2300DCA324 /* Alamofire.framework */,
-				211D46E71BDA0C2300DCA324 /* Alamofire.framework.dSYM */,
-				211D46E81BDA0C2300DCA324 /* SwiftyJSON.framework */,
-				211D46E91BDA0C2300DCA324 /* SwiftyJSON.framework.dSYM */,
-			);
-			path = Mac;
-			sourceTree = "<group>";
-		};
-		211D46EA1BDA0C2300DCA324 /* watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				211D46EB1BDA0C2300DCA324 /* Alamofire.framework */,
-				211D46EC1BDA0C2300DCA324 /* Alamofire.framework.dSYM */,
-				211D46ED1BDA0C2300DCA324 /* SwiftyJSON.framework */,
-				211D46EE1BDA0C2300DCA324 /* SwiftyJSON.framework.dSYM */,
-			);
-			path = watchOS;
 			sourceTree = "<group>";
 		};
 		211D46EF1BDA0C4D00DCA324 /* Framework */ = {
@@ -192,7 +126,6 @@
 		F2DBA4EA1BCD9C9D0040C710 = {
 			isa = PBXGroup;
 			children = (
-				211D46DD1BDA0C2300DCA324 /* Build */,
 				211D46D11BDA094500DCA324 /* Model */,
 				211D46D01BDA093B00DCA324 /* Utilities */,
 				F2DBA4F51BCD9C9D0040C710 /* toolstracker */,
@@ -399,6 +332,7 @@
 			files = (
 				F2DBA4F91BCD9C9D0040C710 /* ViewController.swift in Sources */,
 				F2DBA4F71BCD9C9D0040C710 /* AppDelegate.swift in Sources */,
+				211D46F81BDA15B100DCA324 /* Config.swift in Sources */,
 				211D46D91BDA0ACE00DCA324 /* TrackingModel.swift in Sources */,
 				211D46D31BDA097200DCA324 /* ServiceRequest.swift in Sources */,
 			);
@@ -409,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2DBA50C1BCD9C9D0040C710 /* toolstrackerTests.swift in Sources */,
+				211D46F91BDA15B100DCA324 /* Config.swift in Sources */,
 				211D46DA1BDA0ACE00DCA324 /* TrackingModel.swift in Sources */,
 				211D46D41BDA097200DCA324 /* ServiceRequest.swift in Sources */,
 			);
