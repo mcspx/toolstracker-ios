@@ -7,8 +7,8 @@
 //
 
 import UIKit
-//import Alamofire
-//import SwiftyJSON
+import Alamofire
+import SwiftyJSON
 
 class ServiceRequest: NSObject {
 
@@ -22,7 +22,36 @@ class ServiceRequest: NSObject {
 
     }
 
-//    var manager = Alamofire.Manager.sharedInstance
+    var manager = Alamofire.Manager.sharedInstance
+
+
+    func getTracking(ssid:String , callback:(DataStatus) -> Void){
+        let param = ["ssid": ssid]
+        print(Config.sharedInstance.tracking)
+        manager.request(.POST, Config.sharedInstance.tracking, parameters: param)
+            .response(completionHandler: {(request , response , responseData , error) in
+                if(error != nil){
+                    callback(.Error)
+                }
+
+                guard let dataDic = JSON(data: responseData!).dictionary else{
+                    callback(.Error)
+                    return
+                }
+                
+                if(dataDic["resultCode"]!.int! == 200){
+                    for trackDic in dataDic["resultData"]!.array!{
+                        TrackingModel.shareInstance.appendTracking(trackDic["order"].int!, state: trackDic["state"].string!, label: trackDic["label"].string!, value: trackDic["value"].string!)
+                    }
+                    callback(.Ready)
+                }else{
+                    callback(.Error)
+                }
+
+            })
+
+    }
+
 
 
 }
