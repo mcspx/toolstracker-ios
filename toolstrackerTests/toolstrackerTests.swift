@@ -7,6 +7,7 @@
 //
 
 import XCTest
+
 @testable import toolstracker
 
 class toolstrackerTests: XCTestCase {
@@ -32,5 +33,11 @@ class toolstrackerTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+
+    func testTrackingModelNotNil(){
+        TrackingModel.shareInstance.appendTracking(1, state: "yea", label: "yea", value: "yea")
+        XCTAssertNotNil(TrackingModel.shareInstance.trackingList)
+    }
+
     
 }
