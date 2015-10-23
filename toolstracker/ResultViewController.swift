@@ -10,8 +10,15 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBAction func pressHistory(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+
+    }
+    @IBOutlet var tbvResult: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tbvResult.estimatedRowHeight = 100
+        self.tbvResult.rowHeight = UITableViewAutomaticDimension
 
         // Do any additional setup after loading the view.
     }
@@ -19,6 +26,25 @@ class ResultViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCellWithIdentifier("ResultTableViewCell", forIndexPath: indexPath) as! ResultTableViewCell
+        let tracking = TrackingModel.shareInstance.trackingList[indexPath.row] 
+
+        if(tracking.state != "F"){
+        cell.lblHeader.text = tracking.label
+        cell.lblDetail.text = tracking.value
+        }
+
+
+        return cell
+
+    }
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return TrackingModel.shareInstance.trackingList.count
     }
     
 

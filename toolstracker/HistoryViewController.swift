@@ -10,9 +10,27 @@ import UIKit
 
 class HistoryViewController: UIViewController {
 
+    @IBAction func pressClear(sender: AnyObject) {
+
+    }
+
+    
+    @IBAction func pressScan(sender: AnyObject) {
+        let viewCtrl = self.storyboard?.instantiateViewControllerWithIdentifier("QRCodeNavigation")
+        self.presentViewController(viewCtrl!, animated: true, completion: nil)
+    }
+
+
+    @IBAction func pressSetting(sender: AnyObject) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ServiceRequest.sharedInstance.getTracking("A-TH-TH2015-10-00010", callback: {DataStatus in
+            if(DataStatus == .Ready){
+
+            }
+        })
         // Do any additional setup after loading the view.
     }
 

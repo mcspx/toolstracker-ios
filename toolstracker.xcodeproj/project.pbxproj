@@ -14,8 +14,17 @@
 		211D46DC1BDA0C1900DCA324 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211D46DB1BDA0C1900DCA324 /* Alamofire.framework */; };
 		211D46F81BDA15B100DCA324 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D46F71BDA15B100DCA324 /* Config.swift */; settings = {ASSET_TAGS = (); }; };
 		211D46F91BDA15B100DCA324 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D46F71BDA15B100DCA324 /* Config.swift */; settings = {ASSET_TAGS = (); }; };
+		211D46FB1BDA1BB000DCA324 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D46FA1BDA1BB000DCA324 /* ResultViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		211D46FC1BDA1BB000DCA324 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D46FA1BDA1BB000DCA324 /* ResultViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		21A342761BDA269D00830372 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A342741BDA269D00830372 /* QRCodeReader.framework */; };
+		21A342771BDA269D00830372 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A342751BDA269D00830372 /* SwiftyJSON.framework */; };
+		21A342781BDA277800830372 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211D46DB1BDA0C1900DCA324 /* Alamofire.framework */; };
+		21A342791BDA277800830372 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A342741BDA269D00830372 /* QRCodeReader.framework */; };
+		21A3427A1BDA277800830372 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A342751BDA269D00830372 /* SwiftyJSON.framework */; };
+		21A3427D1BDA42A500830372 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3427C1BDA42A500830372 /* HistoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		21A3427F1BDA440800830372 /* QRCodeReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A3427E1BDA440800830372 /* QRCodeReadViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		21A633DE1BDAACB000A1DFCD /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A633DD1BDAACB000A1DFCD /* ResultTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		F2DBA4F71BCD9C9D0040C710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBA4F61BCD9C9D0040C710 /* AppDelegate.swift */; };
-		F2DBA4F91BCD9C9D0040C710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBA4F81BCD9C9D0040C710 /* ViewController.swift */; };
 		F2DBA4FC1BCD9C9D0040C710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DBA4FA1BCD9C9D0040C710 /* Main.storyboard */; };
 		F2DBA4FE1BCD9C9D0040C710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DBA4FD1BCD9C9D0040C710 /* Assets.xcassets */; };
 		F2DBA5011BCD9C9D0040C710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DBA4FF1BCD9C9D0040C710 /* LaunchScreen.storyboard */; };
@@ -57,9 +66,14 @@
 		211D46D81BDA0ACE00DCA324 /* TrackingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrackingModel.swift; path = Model/TrackingModel.swift; sourceTree = "<group>"; };
 		211D46DB1BDA0C1900DCA324 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		211D46F71BDA15B100DCA324 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Utilities/Config.swift; sourceTree = "<group>"; };
+		211D46FA1BDA1BB000DCA324 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		21A342741BDA269D00830372 /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = "<group>"; };
+		21A342751BDA269D00830372 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		21A3427C1BDA42A500830372 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		21A3427E1BDA440800830372 /* QRCodeReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReadViewController.swift; sourceTree = "<group>"; };
+		21A633DD1BDAACB000A1DFCD /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		F2DBA4F31BCD9C9D0040C710 /* toolstracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toolstracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DBA4F61BCD9C9D0040C710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2DBA4F81BCD9C9D0040C710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F2DBA4FB1BCD9C9D0040C710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2DBA4FD1BCD9C9D0040C710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2DBA5001BCD9C9D0040C710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A342761BDA269D00830372 /* QRCodeReader.framework in Frameworks */,
+				21A342771BDA269D00830372 /* SwiftyJSON.framework in Frameworks */,
 				211D46DC1BDA0C1900DCA324 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +101,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A342781BDA277800830372 /* Alamofire.framework in Frameworks */,
+				21A342791BDA277800830372 /* QRCodeReader.framework in Frameworks */,
+				21A3427A1BDA277800830372 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,9 +137,20 @@
 		211D46EF1BDA0C4D00DCA324 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				21A342741BDA269D00830372 /* QRCodeReader.framework */,
+				21A342751BDA269D00830372 /* SwiftyJSON.framework */,
 				211D46DB1BDA0C1900DCA324 /* Alamofire.framework */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		21A633DC1BDAA98900A1DFCD /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				211D46FA1BDA1BB000DCA324 /* ResultViewController.swift */,
+				21A633DD1BDAACB000A1DFCD /* ResultTableViewCell.swift */,
+			);
+			name = Result;
 			sourceTree = "<group>";
 		};
 		F2DBA4EA1BCD9C9D0040C710 = {
@@ -149,12 +179,14 @@
 		F2DBA4F51BCD9C9D0040C710 /* toolstracker */ = {
 			isa = PBXGroup;
 			children = (
+				21A633DC1BDAA98900A1DFCD /* Result */,
 				F2DBA4F61BCD9C9D0040C710 /* AppDelegate.swift */,
-				F2DBA4F81BCD9C9D0040C710 /* ViewController.swift */,
+				21A3427E1BDA440800830372 /* QRCodeReadViewController.swift */,
 				F2DBA4FA1BCD9C9D0040C710 /* Main.storyboard */,
 				F2DBA4FD1BCD9C9D0040C710 /* Assets.xcassets */,
 				F2DBA4FF1BCD9C9D0040C710 /* LaunchScreen.storyboard */,
 				F2DBA5021BCD9C9D0040C710 /* Info.plist */,
+				21A3427C1BDA42A500830372 /* HistoryViewController.swift */,
 			);
 			path = toolstracker;
 			sourceTree = "<group>";
@@ -330,11 +362,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2DBA4F91BCD9C9D0040C710 /* ViewController.swift in Sources */,
 				F2DBA4F71BCD9C9D0040C710 /* AppDelegate.swift in Sources */,
+				21A3427F1BDA440800830372 /* QRCodeReadViewController.swift in Sources */,
 				211D46F81BDA15B100DCA324 /* Config.swift in Sources */,
 				211D46D91BDA0ACE00DCA324 /* TrackingModel.swift in Sources */,
 				211D46D31BDA097200DCA324 /* ServiceRequest.swift in Sources */,
+				21A3427D1BDA42A500830372 /* HistoryViewController.swift in Sources */,
+				21A633DE1BDAACB000A1DFCD /* ResultTableViewCell.swift in Sources */,
+				211D46FB1BDA1BB000DCA324 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211D46FC1BDA1BB000DCA324 /* ResultViewController.swift in Sources */,
 				F2DBA50C1BCD9C9D0040C710 /* toolstrackerTests.swift in Sources */,
 				211D46F91BDA15B100DCA324 /* Config.swift in Sources */,
 				211D46DA1BDA0ACE00DCA324 /* TrackingModel.swift in Sources */,
@@ -515,6 +551,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = toolstrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mstack.toolstrackerTests;
@@ -527,6 +567,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = toolstrackerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mstack.toolstrackerTests;

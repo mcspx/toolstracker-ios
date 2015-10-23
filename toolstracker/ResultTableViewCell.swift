@@ -10,6 +10,8 @@ import UIKit
 
 class ResultTableViewCell: UITableViewCell {
 
+    @IBOutlet var lblDetail: UILabel!
+    @IBOutlet var lblHeader: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
