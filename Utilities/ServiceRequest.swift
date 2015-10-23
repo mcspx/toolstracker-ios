@@ -41,9 +41,27 @@ class ServiceRequest: NSObject {
                 
                 if(dataDic["resultCode"]!.int! == 200){
                     for trackDic in dataDic["resultData"]!.array!{
-                        TrackingModel.shareInstance.appendTracking(trackDic["order"].int!, state: trackDic["state"].string!, label: trackDic["label"].string!, value: trackDic["value"].string!)
+                        var tempValue = ""
+
+                        if let order = trackDic["order"].int ,
+                           let state = trackDic["state"].string,
+                           let label = trackDic["label"].string{
+
+                            if let value = trackDic["value"].string{
+                                tempValue = value
+                            }
+                            else{
+                                tempValue = "/(value)"
+                            }
+
+                            TrackingModel.shareInstance.appendTracking(order, state: state, label: label, value: tempValue)
+                        }
+                        else{
+                            callback(.Error)
+                        }
+                         callback(.Ready)
                     }
-                    callback(.Ready)
+
                 }else{
                     callback(.Error)
                 }
