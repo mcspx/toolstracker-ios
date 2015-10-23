@@ -9,5 +9,7 @@
 import UIKit
 
 class Config: NSObject {
-
+    static let sharedInstance = Config()
+    static let MAIN_SERVICE = "http://api.echeck-tools.com"
+    var tracking = "\(MAIN_SERVICE)/tracking"
 }
