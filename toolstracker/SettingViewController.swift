@@ -10,6 +10,16 @@ import UIKit
 
 class SettingViewController: UIViewController {
 
+    @IBAction func pressSave(sender: AnyObject) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(txtFieldUrl.text, forKey: Config.sharedInstance.saveURLKey)
+        let alert = UIAlertController(title: "", message: "Save Sucessful", preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
+
+        presentViewController(alert, animated: true, completion: nil)
+
+    }
+    @IBOutlet var txtFieldUrl: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
