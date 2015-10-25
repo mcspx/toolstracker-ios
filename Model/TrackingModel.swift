@@ -7,25 +7,14 @@
 //
 
 import UIKit
+import RealmSwift
+import Realm
 
-class TrackingModel: NSObject {
-     static let shareInstance = TrackingModel()
-    var trackingList:Array<TrackingViewModel> = []
-
-    func appendTracking(order:Int ,state:String ,label:String ,value:String){
-        let tracking = TrackingViewModel()
-        tracking.order = order
-        tracking.state = state
-        tracking.label = label
-        tracking.value = value
-        trackingList.append(tracking)
-    }
+class TrackingModel: Object {
+    dynamic var order = ""
+    dynamic var state = ""
+    dynamic var label = ""
+    dynamic var value = ""
 
 }
 
-class TrackingViewModel: NSObject {
-    var order = 0
-    var state = ""
-    var label = ""
-    var value = ""
-}
