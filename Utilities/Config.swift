@@ -11,5 +11,6 @@ import UIKit
 class Config: NSObject {
     static let sharedInstance = Config()
     static let MAIN_PATH = "http://api.echeck-tools.com"
+    var saveURLKey = "saveURLKey"
     var tracking = "\(MAIN_PATH)/tracking"
 }
