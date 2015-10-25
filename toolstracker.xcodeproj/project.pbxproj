@@ -26,6 +26,8 @@
 		21BE8C1A1BDCAF2A0065BFAA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE8C191BDCAF2A0065BFAA /* SettingViewController.swift */; };
 		21BE8C2C1BDCBE370065BFAA /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BE8C2B1BDCBE2D0065BFAA /* IQKeyboardManagerSwift.framework */; };
 		21BE8C2D1BDCBE370065BFAA /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21BE8C2B1BDCBE2D0065BFAA /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		21BE8C361BDCCC2E0065BFAA /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BE8C331BDCCC2E0065BFAA /* MGSwipeButton.m */; };
+		21BE8C371BDCCC2E0065BFAA /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BE8C351BDCCC2E0065BFAA /* MGSwipeTableCell.m */; };
 		21D3F7421BDB5D0D00FD6EEC /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D3F7401BDB5D0D00FD6EEC /* Realm.framework */; };
 		21D3F7431BDB5D0D00FD6EEC /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D3F7411BDB5D0D00FD6EEC /* RealmSwift.framework */; };
 		21D3F7491BDB5DA700FD6EEC /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21D3F7461BDB5DA700FD6EEC /* Alamofire.framework.dSYM */; };
@@ -114,6 +116,11 @@
 		21A633DD1BDAACB000A1DFCD /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		21BE8C191BDCAF2A0065BFAA /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		21BE8C261BDCBE2D0065BFAA /* IQKeyboardManagerSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IQKeyboardManagerSwift.xcodeproj; path = IQKeyboardManager/IQKeyboardManagerSwift.xcodeproj; sourceTree = "<group>"; };
+		21BE8C321BDCCC2E0065BFAA /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
+		21BE8C331BDCCC2E0065BFAA /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
+		21BE8C341BDCCC2E0065BFAA /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
+		21BE8C351BDCCC2E0065BFAA /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
+		21BE8C3B1BDCCCF20065BFAA /* ToolStrackerBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolStrackerBridgingHeader.h; sourceTree = "<group>"; };
 		21D3F7401BDB5D0D00FD6EEC /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		21D3F7411BDB5D0D00FD6EEC /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		21D3F7461BDB5DA700FD6EEC /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
@@ -241,6 +248,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		21BE8C311BDCCC2E0065BFAA /* MGSwipeTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				21BE8C321BDCCC2E0065BFAA /* MGSwipeButton.h */,
+				21BE8C331BDCCC2E0065BFAA /* MGSwipeButton.m */,
+				21BE8C341BDCCC2E0065BFAA /* MGSwipeTableCell.h */,
+				21BE8C351BDCCC2E0065BFAA /* MGSwipeTableCell.m */,
+			);
+			path = MGSwipeTableCell;
+			sourceTree = "<group>";
+		};
 		AD43DDDC44AED61EF0DBB368 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +279,8 @@
 		F2DBA4EA1BCD9C9D0040C710 = {
 			isa = PBXGroup;
 			children = (
+				21BE8C3B1BDCCCF20065BFAA /* ToolStrackerBridgingHeader.h */,
+				21BE8C311BDCCC2E0065BFAA /* MGSwipeTableCell */,
 				21D3F7501BDBE2A100FD6EEC /* SVProgressHUD.framework.dSYM */,
 				21D3F7461BDB5DA700FD6EEC /* Alamofire.framework.dSYM */,
 				21D3F7471BDB5DA700FD6EEC /* QRCodeReader.framework.dSYM */,
@@ -542,7 +562,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2DBA4F71BCD9C9D0040C710 /* AppDelegate.swift in Sources */,
+				21BE8C371BDCCC2E0065BFAA /* MGSwipeTableCell.m in Sources */,
 				21D3F74D1BDB710600FD6EEC /* HistoryModel.swift in Sources */,
+				21BE8C361BDCCC2E0065BFAA /* MGSwipeButton.m in Sources */,
 				211D46F81BDA15B100DCA324 /* Config.swift in Sources */,
 				21D3F7591BDBEC4C00FD6EEC /* HistoryTableViewCell.swift in Sources */,
 				211D46D91BDA0ACE00DCA324 /* TrackingModel.swift in Sources */,
@@ -713,6 +735,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mstack.toolstracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = ToolStrackerBridgingHeader.h;
 			};
 			name = Debug;
 		};
@@ -734,6 +757,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mstack.toolstracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = ToolStrackerBridgingHeader.h;
 			};
 			name = Release;
 		};

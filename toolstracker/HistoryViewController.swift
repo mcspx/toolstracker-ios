@@ -12,7 +12,7 @@ import QRCodeReader
 import AVFoundation
 import SVProgressHUD
 
-class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelegate{
+class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelegate , MGSwipeTableCellDelegate{
     @IBOutlet var tbvHistory: UITableView!
     lazy var reader: QRCodeReaderViewController = QRCodeReaderViewController(cancelButtonTitle: "Cancel", coderReader: QRCodeReader(metadataObjectTypes: [AVMetadataObjectTypeQRCode]), showTorchButton: true)
 
@@ -88,8 +88,6 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let defaults = NSUserDefaults.standardUserDefaults()
-        print(defaults.objectForKey(Config.sharedInstance.saveURLKey)!)
         // Do any additional setup after loading the view.
     }
 
@@ -113,15 +111,24 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
         let serviceCode = tracking[0].label
         let regisTime = tracking[8].value
         let TATAll = tracking[9].value
-
         cell.lblHeader.text = serviceCode
         cell.lblDetail.text = regisTime
         cell.lblTATAll.text = TATAll
-
-//        cell.lblHeader.text = tracking.
+        cell.delegate = self
+        cell.rightButtons = [MGSwipeButton(title: "Delete", backgroundColor: UIColor.redColor())]
         return cell
     }
 
+    func swipeTableCell(cell: MGSwipeTableCell!, tappedButtonAtIndex index: Int, direction: MGSwipeDirection, fromExpansion: Bool) -> Bool {
+        let history = self.realm.objects(HistoryModel)[index]
+
+        try! self.realm.write({
+            self.realm.delete(history)
+            self.tbvHistory.reloadData()
+        })
+
+        return true
+    }
     /*
     // MARK: - Navigation
 

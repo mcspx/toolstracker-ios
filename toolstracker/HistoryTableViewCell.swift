@@ -8,7 +8,8 @@
 
 import UIKit
 
-class HistoryTableViewCell: UITableViewCell {
+
+class HistoryTableViewCell: MGSwipeTableCell {
 
     @IBOutlet var imgTAT: UIImageView!
     @IBOutlet var lblTATAll: UILabel!
