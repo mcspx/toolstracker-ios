@@ -9,10 +9,11 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-
+import RealmSwift
 class ServiceRequest: NSObject {
 
     static let sharedInstance = ServiceRequest()
+
 
 
     enum DataStatus : Int {
@@ -27,7 +28,6 @@ class ServiceRequest: NSObject {
 
     func getTracking(ssid:String , callback:(DataStatus) -> Void){
         let param = ["ssid": ssid]
-        print(Config.sharedInstance.tracking)
         manager.request(.POST, Config.sharedInstance.tracking, parameters: param)
             .response(completionHandler: {(request , response , responseData , error) in
                 if(error != nil){
@@ -38,29 +38,43 @@ class ServiceRequest: NSObject {
                     callback(.Error)
                     return
                 }
-                
                 if(dataDic["resultCode"]!.int! == 200){
+                    let history = HistoryModel()
                     for trackDic in dataDic["resultData"]!.array!{
                         var tempValue = ""
-
                         if let order = trackDic["order"].int ,
                            let state = trackDic["state"].string,
                            let label = trackDic["label"].string{
 
-                            if let value = trackDic["value"].string{
-                                tempValue = value
+                            if let valueTrack = trackDic["value"].string{
+                                tempValue = valueTrack
                             }
                             else{
-                                tempValue = "/(value)"
+                                tempValue = "\(trackDic["value"].int!)"
                             }
+                            
+                            let tracking = TrackingModel()
+                            tracking.order = "\(order)"
+                            tracking.state = state
+                            tracking.label = label
+                            tracking.value = tempValue
 
-                            TrackingModel.shareInstance.appendTracking(order, state: state, label: label, value: tempValue)
+
+                            history.tracking.append(tracking)
+
+
+
                         }
                         else{
-                            callback(.Error)
+//                            callback(.Error)
                         }
-                         callback(.Ready)
                     }
+
+                    let realm = try! Realm()
+                    try! realm.write({
+                        realm.add(history)
+                    })
+                     callback(.Ready)
 
                 }else{
                     callback(.Error)
