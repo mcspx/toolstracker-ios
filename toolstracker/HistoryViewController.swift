@@ -88,8 +88,8 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        let defaults = NSUserDefaults.standardUserDefaults()
+        print(defaults.objectForKey(Config.sharedInstance.saveURLKey)!)
         // Do any additional setup after loading the view.
     }
 

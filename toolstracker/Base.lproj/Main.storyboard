@@ -464,6 +464,9 @@
                                                     <constraint firstAttribute="height" constant="40" id="uNu-tc-TwH"/>
                                                 </constraints>
                                                 <state key="normal" backgroundImage="LocationLogo"/>
+                                                <connections>
+                                                    <action selector="pressSave:" destination="Eb8-En-9LJ" eventType="touchUpInside" id="8rE-Gs-iha"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -476,6 +479,9 @@
                                             <constraint firstAttribute="height" constant="74" id="qxG-wu-NCC"/>
                                             <constraint firstAttribute="width" constant="200" id="v2C-dw-nOk"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="kjv-h7-4E8" appends="YES" id="K3Z-Eg-BAG"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -503,8 +509,16 @@
                             <constraint firstItem="fpC-fd-v7Q" firstAttribute="centerX" secondItem="es5-if-Iyh" secondAttribute="centerX" id="UPE-c4-vn0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtFieldUrl" destination="fpC-fd-v7Q" id="B8a-ug-ZN4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FyY-AX-ATY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kjv-h7-4E8">
+                    <connections>
+                        <action selector="pressSave:" destination="Eb8-En-9LJ" id="BFO-nD-5NM"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1137" y="1734"/>
         </scene>
