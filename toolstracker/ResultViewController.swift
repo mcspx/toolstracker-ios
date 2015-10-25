@@ -7,20 +7,30 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ResultViewController: UIViewController {
 
-    @IBAction func pressHistory(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
 
+
+    
+    @IBAction func pressHistory(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
+
+    
+
+
+    var trackingModel = List<TrackingModel>()
     @IBOutlet var tbvResult: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+
+
         self.tbvResult.estimatedRowHeight = 100
         self.tbvResult.rowHeight = UITableViewAutomaticDimension
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,20 +41,22 @@ class ResultViewController: UIViewController {
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCellWithIdentifier("ResultTableViewCell", forIndexPath: indexPath) as! ResultTableViewCell
-        let tracking = TrackingModel.shareInstance.trackingList[indexPath.row] 
 
-        if(tracking.state != "F"){
-        cell.lblHeader.text = tracking.label
-        cell.lblDetail.text = tracking.value
+        let tracking = trackingModel[indexPath.row]
+
+        if(tracking.state == "T"){
+            cell.lblHeader.text = tracking.label
+            cell.lblDetail.text = tracking.value
         }
 
-
+        
+        
         return cell
-
+        
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return TrackingModel.shareInstance.trackingList.count
+        return (trackingModel.count>0) ? trackingModel.count : 0
     }
     
 
