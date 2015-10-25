@@ -4,7 +4,6 @@
 target 'toolstracker' do
 use_frameworks!
 pod 'RealmSwift'
-pod 'IQKeyboardManagerSwift'
 end
 
 target 'toolstrackerTests' do

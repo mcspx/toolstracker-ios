@@ -52,12 +52,10 @@ code_sign_if_enabled() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework 'Pods-toolstracker/IQKeyboardManagerSwift.framework'
   install_framework 'Pods-toolstracker/Realm.framework'
   install_framework 'Pods-toolstracker/RealmSwift.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework 'Pods-toolstracker/IQKeyboardManagerSwift.framework'
   install_framework 'Pods-toolstracker/Realm.framework'
   install_framework 'Pods-toolstracker/RealmSwift.framework'
 fi
