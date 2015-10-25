@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B1F126604AE5B6AAA35E878"
+               BlueprintIdentifier = "8922117C1889EDF9008646EA"
                BuildableName = "Pods_toolstracker.framework"
                BlueprintName = "Pods-toolstracker"
                ReferencedContainer = "container:Pods.xcodeproj">
