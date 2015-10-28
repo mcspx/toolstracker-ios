@@ -12,7 +12,7 @@ class SettingViewController: UIViewController {
 
     @IBAction func pressSave(sender: AnyObject) {
         let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setObject(txtFieldUrl.text, forKey: Config.sharedInstance.saveURLKey)
+        defaults.setObject(txtFieldUrl.text, forKey: "saveURLKey")
         let alert = UIAlertController(title: "", message: "Save Sucessful", preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
 

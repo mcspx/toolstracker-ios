@@ -10,7 +10,20 @@ import UIKit
 
 class Config: NSObject {
     static let sharedInstance = Config()
-    static let MAIN_PATH = "http://api.echeck-tools.com"
-    var saveURLKey = "saveURLKey"
-    var tracking = "\(MAIN_PATH)/tracking"
+    let saveURLKey = "saveURLKey"
+    var tracking:String! = ""
+
+
+    override init() {
+        let userDefault = NSUserDefaults.standardUserDefaults()
+        if let url = userDefault.objectForKey(self.saveURLKey) as? String{
+            tracking = "\(url)/tracking"
+        }
+        else{
+            tracking = "http://api.echeck-tools.com/tracking"
+        }
+    }
+    
 }
+
+

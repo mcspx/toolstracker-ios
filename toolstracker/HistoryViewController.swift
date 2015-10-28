@@ -16,6 +16,7 @@ import SDWebImage
 
 class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelegate , MGSwipeTableCellDelegate{
     @IBOutlet var tbvHistory: UITableView!
+
     lazy var reader: QRCodeReaderViewController = QRCodeReaderViewController(cancelButtonTitle: "Cancel", coderReader: QRCodeReader(metadataObjectTypes: [AVMetadataObjectTypeQRCode]), showTorchButton: true)
 
     let realm = try! Realm()
@@ -61,7 +62,8 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
     func reader(reader: QRCodeReaderViewController, didScanResult result: String) {
         self.dismissViewControllerAnimated(true, completion: {
             SVProgressHUD.showWithMaskType(.Black)
-            ServiceRequest.sharedInstance.getTracking(result, callback: {DataStatus in
+            let config = Config()
+            ServiceRequest.sharedInstance.getTracking(result, url:config.tracking ,callback: {DataStatus in
                 if(DataStatus == .Ready){
                     SVProgressHUD.dismiss()
 
@@ -77,6 +79,10 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
 
                 }
                 else{
+                    SVProgressHUD.dismiss()
+                    let alert = UIAlertController(title: "Error", message: "invalid Path", preferredStyle: .Alert)
+                    alert.addAction(UIAlertAction(title: "Close", style: .Cancel, handler: nil))
+                    self.presentViewController(alert, animated: true, completion: nil)
 
                 }
             })

@@ -13,7 +13,7 @@ import RealmSwift
 class ServiceRequest: NSObject {
 
     static let sharedInstance = ServiceRequest()
-
+    var isUseTestURL = false
 
 
     enum DataStatus : Int {
@@ -26,9 +26,17 @@ class ServiceRequest: NSObject {
     var manager = Alamofire.Manager.sharedInstance
 
 
-    func getTracking(ssid:String , callback:(DataStatus) -> Void){
+    func getTracking(ssid:String ,var url:String , callback:(DataStatus) -> Void){
         let param = ["ssid": ssid]
-        manager.request(.POST, Config.sharedInstance.tracking, parameters: param)
+
+       let urlTest = NSURL(string: url)
+        if(urlTest == nil || urlTest?.scheme == "" || urlTest?.host == ""){
+//            url = "http://api.echeck-tools.com/tracking"
+            callback(.Error)
+        }
+
+        manager.session.configuration.timeoutIntervalForRequest = 10
+        manager.request(.POST, url, parameters: param)
             .response(completionHandler: {(request , response , responseData , error) in
                 if(error != nil){
                     callback(.Error)
@@ -38,6 +46,8 @@ class ServiceRequest: NSObject {
                     callback(.Error)
                     return
                 }
+            
+
                 if(dataDic["resultCode"]!.int! == 200){
                     let history = HistoryModel()
                     for trackDic in dataDic["resultData"]!.array!{
