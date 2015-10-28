@@ -11,6 +11,8 @@ import RealmSwift
 import QRCodeReader
 import AVFoundation
 import SVProgressHUD
+import SDWebImage
+
 
 class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelegate , MGSwipeTableCellDelegate{
     @IBOutlet var tbvHistory: UITableView!
@@ -111,11 +113,61 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
         let serviceCode = tracking[0].label
         let regisTime = tracking[8].value
         let TATAll = tracking[9].value
+
+
+        let condition1 = tracking[13].value
+        let condition3 = tracking[15].value
+
+
+
+        if(condition1 == "R"){
+            cell.TATState.backgroundColor = UIColor.redColor()
+        }
+        if(condition1 == "G"){
+            cell.TATState.backgroundColor = UIColor.greenColor()
+        }
+        if(condition1 == "Y"){
+            cell.TATState.backgroundColor = UIColor.yellowColor()
+        }
+        if(condition1 == "X"){
+            cell.TATState.backgroundColor = UIColor.whiteColor()
+        }
+
+        var img:UIImage!
+
+        if(condition3 == "00"){
+            img = UIImage(named: "00")
+        }
+        if(condition3 == "11"){
+            img = UIImage(named: "11")
+        }
+        if(condition3 == "21"){
+            img = UIImage(named: "21")
+        }
+        if(condition3 == "22"){
+            img = UIImage(named: "22")
+        }
+        if(condition3 == "31"){
+            img = UIImage(named: "31")
+        }
+        if(condition3 == "32"){
+            img = UIImage(named: "32")
+        }
+        if(condition3 == "99"){
+            img = UIImage(named: "99")
+        }
+
+        cell.imgState.image = img
+
+
+
+
         cell.lblHeader.text = serviceCode
         cell.lblDetail.text = regisTime
         cell.lblTATAll.text = TATAll
         cell.delegate = self
         cell.rightButtons = [MGSwipeButton(title: "Delete", backgroundColor: UIColor.redColor())]
+        cell.rightSwipeSettings.transition = .Rotate3D
         return cell
     }
 

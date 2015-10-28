@@ -58,11 +58,7 @@ class ServiceRequest: NSObject {
                             tracking.state = state
                             tracking.label = label
                             tracking.value = tempValue
-
-
                             history.tracking.append(tracking)
-
-
 
                         }
                         else{

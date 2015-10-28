@@ -11,16 +11,15 @@ import UIKit
 
 class HistoryTableViewCell: MGSwipeTableCell {
 
-    @IBOutlet var imgTAT: UIImageView!
+
+    @IBOutlet var TATState: UILabel!
     @IBOutlet var lblTATAll: UILabel!
     @IBOutlet var lblDetail: UILabel!
     @IBOutlet var lblHeader: UILabel!
     @IBOutlet var imgState: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        self.imgState.layer.cornerRadius = self.imgState.frame.width / 2
-        self.imgState.layer.masksToBounds = true
+        // Initialization codex
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
