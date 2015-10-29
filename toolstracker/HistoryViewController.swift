@@ -66,15 +66,10 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
             ServiceRequest.sharedInstance.getTracking(result, url:config.tracking ,callback: {DataStatus in
                 if(DataStatus == .Ready){
                     SVProgressHUD.dismiss()
-
                     let viewCtrl = self.storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
                     let realm = try! Realm()
-
                     let history = realm.objects(HistoryModel).last!
-
                     viewCtrl.trackingModel = history.tracking
-
-
                     self.presentViewController(viewCtrl, animated: true, completion: nil)
 
                 }
