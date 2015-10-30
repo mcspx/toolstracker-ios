@@ -107,19 +107,18 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return realm.objects(HistoryModel).count
     }
+    
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCellWithIdentifier("HistoryTableViewCell", forIndexPath: indexPath) as! HistoryTableViewCell
         let tracking = realm.objects(HistoryModel)[indexPath.row].tracking
-        let serviceCode = tracking[0].label
+        let serviceCode = tracking[0].value
         let regisTime = tracking[8].value
         let TATAll = tracking[9].value
 
 
         let condition1 = tracking[13].value
-        let condition3 = tracking[15].value
-
-
+        let condition3 = tracking[17].value
 
         if(condition1 == "R"){
             cell.TATState.backgroundColor = UIColor.redColor()
@@ -160,9 +159,6 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
 
         cell.imgState.image = img
 
-
-
-
         cell.lblHeader.text = serviceCode
         cell.lblDetail.text = regisTime
         cell.lblTATAll.text = TATAll
@@ -170,6 +166,16 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
         cell.rightButtons = [MGSwipeButton(title: "Delete", backgroundColor: UIColor.redColor())]
         cell.rightSwipeSettings.transition = .Rotate3D
         return cell
+    }
+
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let viewCtrl = self.storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
+        let history =  self.realm.objects(HistoryModel)[indexPath.row]
+        viewCtrl.trackingModel = history.tracking
+        self.presentViewController(viewCtrl, animated: true, completion: nil)
+
+
     }
 
     func swipeTableCell(cell: MGSwipeTableCell!, tappedButtonAtIndex index: Int, direction: MGSwipeDirection, fromExpansion: Bool) -> Bool {
