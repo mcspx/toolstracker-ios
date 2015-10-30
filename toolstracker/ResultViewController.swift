@@ -19,16 +19,23 @@ class ResultViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
-    
-
+    var filterTracking:Array<TrackingModel> = []
 
     var trackingModel = List<TrackingModel>()
     @IBOutlet var tbvResult: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(self.trackingModel)
+
         self.tbvResult.estimatedRowHeight = 100
         self.tbvResult.rowHeight = UITableViewAutomaticDimension
+
+        for tracking in trackingModel{
+            if(tracking.state != "F"){
+                self.filterTracking.append(tracking)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,7 +48,7 @@ class ResultViewController: UIViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("ResultTableViewCell", forIndexPath: indexPath) as! ResultTableViewCell
 
         
-        let tracking = trackingModel[indexPath.row]
+        let tracking = filterTracking[indexPath.row]
 
         if(tracking.state == "T"){
             cell.lblHeader.text = tracking.label
@@ -55,16 +62,10 @@ class ResultViewController: UIViewController {
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return (trackingModel.count>0) ? trackingModel.count : 0
+        return (filterTracking.count>0) ? filterTracking.count : 0
     }
 
-//    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool{
-//        return true
-//    }
-//
-//    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
-//
-//    }
+
 
 
     /*
