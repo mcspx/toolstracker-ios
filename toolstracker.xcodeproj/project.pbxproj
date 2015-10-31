@@ -133,7 +133,7 @@
 		23ABD1DA05614D26F13B463A /* Pods_toolstracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_toolstracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28399C48961BB9435D1842C2 /* Pods-toolstracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toolstracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-toolstracker/Pods-toolstracker.release.xcconfig"; sourceTree = "<group>"; };
 		BBC510288B8E5513AEAAF4FE /* Pods-toolstracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toolstracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-toolstracker/Pods-toolstracker.debug.xcconfig"; sourceTree = "<group>"; };
-		F2DBA4F31BCD9C9D0040C710 /* toolstracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toolstracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DBA4F31BCD9C9D0040C710 /* Tools Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tools Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DBA4F61BCD9C9D0040C710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2DBA4FB1BCD9C9D0040C710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2DBA4FD1BCD9C9D0040C710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -301,7 +301,7 @@
 		F2DBA4F41BCD9C9D0040C710 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F2DBA4F31BCD9C9D0040C710 /* toolstracker.app */,
+				F2DBA4F31BCD9C9D0040C710 /* Tools Tracker.app */,
 				F2DBA5071BCD9C9D0040C710 /* toolstrackerTests.xctest */,
 				F2DBA5121BCD9C9D0040C710 /* toolstrackerUITests.xctest */,
 			);
@@ -365,7 +365,7 @@
 			);
 			name = toolstracker;
 			productName = toolstracker;
-			productReference = F2DBA4F31BCD9C9D0040C710 /* toolstracker.app */;
+			productReference = F2DBA4F31BCD9C9D0040C710 /* Tools Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F2DBA5061BCD9C9D0040C710 /* toolstrackerTests */ = {
@@ -412,7 +412,7 @@
 			attributes = {
 				CLASSPREFIX = mcspx;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Monchai Saipin";
+				ORGANIZATIONNAME = "M Stack Co.,Ltd.";
 				TargetAttributes = {
 					F2DBA4F21BCD9C9D0040C710 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -672,7 +672,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -710,7 +710,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -733,7 +733,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mstack.toolstracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tools Tracker";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = ToolStrackerBridgingHeader.h;
 			};
@@ -755,7 +755,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mstack.toolstracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tools Tracker";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = ToolStrackerBridgingHeader.h;
 			};
