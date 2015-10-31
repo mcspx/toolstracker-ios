@@ -37,7 +37,7 @@
 		21D3F7511BDBE2A100FD6EEC /* SVProgressHUD.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21D3F7501BDBE2A100FD6EEC /* SVProgressHUD.framework.dSYM */; };
 		21D3F7571BDBE3A600FD6EEC /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D3F7561BDBE3A600FD6EEC /* SVProgressHUD.framework */; };
 		21D3F7591BDBEC4C00FD6EEC /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D3F7581BDBEC4C00FD6EEC /* HistoryTableViewCell.swift */; };
-		576F83F42DE8925E9FAFF5C3 /* Pods_toolstracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23ABD1DA05614D26F13B463A /* Pods_toolstracker.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		576F83F42DE8925E9FAFF5C3 /* Pods_toolstracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23ABD1DA05614D26F13B463A /* Pods_toolstracker.framework */; };
 		F2DBA4F71BCD9C9D0040C710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBA4F61BCD9C9D0040C710 /* AppDelegate.swift */; };
 		F2DBA4FC1BCD9C9D0040C710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DBA4FA1BCD9C9D0040C710 /* Main.storyboard */; };
 		F2DBA4FE1BCD9C9D0040C710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DBA4FD1BCD9C9D0040C710 /* Assets.xcassets */; };
@@ -416,7 +416,7 @@
 				TargetAttributes = {
 					F2DBA4F21BCD9C9D0040C710 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 43R49L78WG;
+						DevelopmentTeam = 2SHNCSE4JX;
 					};
 					F2DBA5061BCD9C9D0040C710 = {
 						CreatedOnToolsVersion = 7.0.1;
