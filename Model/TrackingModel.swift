@@ -15,5 +15,6 @@ class TrackingModel: Object {
     dynamic var state = ""
     dynamic var label = ""
     dynamic var value = ""
+ 
 }
 

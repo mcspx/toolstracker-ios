@@ -11,4 +11,10 @@ import RealmSwift
 
 class HistoryModel: Object {
     let tracking = List<TrackingModel>()
+    dynamic var condition1 = ""
+    dynamic var condition2 = ""
+    dynamic var condition3 = ""
+    dynamic var serviceCode = ""
+    dynamic var regisTime = ""
+    dynamic var TATAll = ""
 }

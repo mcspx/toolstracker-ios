@@ -46,19 +46,10 @@ class ResultViewController: UIViewController {
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCellWithIdentifier("ResultTableViewCell", forIndexPath: indexPath) as! ResultTableViewCell
-
-        
         let tracking = filterTracking[indexPath.row]
-
-        if(tracking.state == "T"){
             cell.lblHeader.text = tracking.label
             cell.lblDetail.text = tracking.value
-        }
-
-        
-        
         return cell
-        
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{

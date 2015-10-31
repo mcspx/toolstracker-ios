@@ -19,6 +19,7 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
 
     lazy var reader: QRCodeReaderViewController = QRCodeReaderViewController(cancelButtonTitle: "Cancel", coderReader: QRCodeReader(metadataObjectTypes: [AVMetadataObjectTypeQRCode]), showTorchButton: true)
 
+
     let realm = try! Realm()
     @IBAction func pressClear(sender: AnyObject) {
         let alert = UIAlertController(title: "", message: "Do you want to clear?", preferredStyle: .Alert)
@@ -27,10 +28,8 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
                  self.realm.delete(self.realm.objects(HistoryModel))
                 self.tbvHistory.reloadData()
             })
-
         }))
         alert.addAction(UIAlertAction(title: "cancel", style: .Cancel, handler: nil))
-
         presentViewController(alert, animated: true, completion: nil)
 
     }
@@ -111,14 +110,14 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCellWithIdentifier("HistoryTableViewCell", forIndexPath: indexPath) as! HistoryTableViewCell
-        let tracking = realm.objects(HistoryModel)[indexPath.row].tracking
-        let serviceCode = tracking[0].value
-        let regisTime = tracking[8].value
-        let TATAll = tracking[9].value
+        let history = realm.objects(HistoryModel)[indexPath.row]
+        let serviceCode = history.serviceCode
+        let regisTime = history.regisTime
+        let TATAll = history.TATAll
 
 
-        let condition1 = tracking[13].value
-        let condition3 = tracking[17].value
+        let condition1 = history.condition1
+        let condition3 = history.condition3
 
         if(condition1 == "R"){
             cell.TATState.backgroundColor = UIColor.redColor()

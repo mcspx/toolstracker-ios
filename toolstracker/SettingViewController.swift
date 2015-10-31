@@ -8,17 +8,19 @@
 
 import UIKit
 import SVProgressHUD
+import Alamofire
+
 
 class SettingViewController: UIViewController {
 
     @IBAction func pressSave(sender: AnyObject) {
         SVProgressHUD.showWithMaskType(.Black)
-        ServiceRequest.sharedInstance.getTracking("A-TH-TH2015-10-00010", url: self.txtFieldUrl.text!+"/tracking", callback: { dataStatus in
+        ServiceRequest.sharedInstance.checkPathCanUse(self.txtFieldUrl.text! , callback: { dataStatus in
             SVProgressHUD.dismiss()
             if(dataStatus == .Ready){
                 let defaults = NSUserDefaults.standardUserDefaults()
                 defaults.setObject(self.txtFieldUrl.text, forKey: "saveURLKey")
-                let alert = UIAlertController(title: "", message: "Save Sucessful", preferredStyle: .Alert)
+                let alert = UIAlertController(title: "", message: "Service Ready!", preferredStyle: .Alert)
                 alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
@@ -32,9 +34,6 @@ class SettingViewController: UIViewController {
     @IBOutlet var txtFieldUrl: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        
         let defaults = NSUserDefaults.standardUserDefaults()
         if let url = defaults.objectForKey(Config.sharedInstance.saveURLKey){
             self.txtFieldUrl.text = url as? String
