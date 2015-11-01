@@ -9,7 +9,7 @@
         <!--Tools Tracking-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="HistoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HistoryViewController" customModule="toolstracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HistoryViewController" customModule="Tools_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="518"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryTableViewCell" rowHeight="83" id="NID-Ud-Ugm" customClass="HistoryTableViewCell" customModule="toolstracker" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryTableViewCell" rowHeight="83" id="NID-Ud-Ugm" customClass="HistoryTableViewCell" customModule="Tools_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NID-Ud-Ugm" id="cQ2-2P-VTO">
@@ -138,7 +138,7 @@
                                                     <constraint firstAttribute="width" constant="40" id="3s4-uZ-rz3"/>
                                                     <constraint firstAttribute="height" constant="40" id="WT1-of-PFS"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="LocationLogo"/>
+                                                <state key="normal" backgroundImage="clear"/>
                                                 <connections>
                                                     <action selector="pressClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gZD-sZ-8Ur"/>
                                                 </connections>
@@ -176,7 +176,7 @@
                                                     <constraint firstAttribute="width" constant="40" id="IUO-s0-Obx"/>
                                                     <constraint firstAttribute="height" constant="40" id="nED-qJ-eIr"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="LocationLogo"/>
+                                                <state key="normal" backgroundImage="scan"/>
                                                 <connections>
                                                     <action selector="pressScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QGe-gM-9kx"/>
                                                 </connections>
@@ -214,7 +214,7 @@
                                                     <constraint firstAttribute="width" constant="40" id="JMh-dQ-iIZ"/>
                                                     <constraint firstAttribute="height" constant="40" id="raI-Nq-9cg"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="LocationLogo"/>
+                                                <state key="normal" backgroundImage="setting"/>
                                                 <connections>
                                                     <action selector="pressSetting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wgp-eC-9cb"/>
                                                 </connections>
@@ -303,7 +303,7 @@
         <!--Tools Tracking-->
         <scene sceneID="uof-Ve-hQV">
             <objects>
-                <viewController storyboardIdentifier="ResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y4U-o4-cSw" customClass="ResultViewController" customModule="toolstracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y4U-o4-cSw" customClass="ResultViewController" customModule="Tools_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="23h-cy-IKT"/>
                         <viewControllerLayoutGuide type="bottom" id="kCL-7q-mSB"/>
@@ -316,7 +316,7 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="498"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ResultTableViewCell" rowHeight="99" id="ORp-YP-leU" customClass="ResultTableViewCell" customModule="toolstracker" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ResultTableViewCell" rowHeight="99" id="ORp-YP-leU" customClass="ResultTableViewCell" customModule="Tools_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="99"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ORp-YP-leU" id="gma-5M-UXK">
@@ -381,7 +381,7 @@
                                                     <constraint firstAttribute="width" constant="40" id="Bg4-Ck-C6d"/>
                                                     <constraint firstAttribute="height" constant="40" id="afg-d6-MOC"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="LocationLogo"/>
+                                                <state key="normal" backgroundImage="history"/>
                                                 <connections>
                                                     <action selector="pressHistory:" destination="Y4U-o4-cSw" eventType="touchUpInside" id="UJe-vR-4XK"/>
                                                 </connections>
@@ -442,7 +442,7 @@
         <!--Tools Tracking-->
         <scene sceneID="ct1-tK-yQA">
             <objects>
-                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Eb8-En-9LJ" customClass="SettingViewController" customModule="toolstracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Eb8-En-9LJ" customClass="SettingViewController" customModule="Tools_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HaS-sG-qh9"/>
                         <viewControllerLayoutGuide type="bottom" id="pPq-Or-0An"/>
@@ -472,7 +472,7 @@
                                                     <constraint firstAttribute="width" constant="40" id="kkx-x3-m4N"/>
                                                     <constraint firstAttribute="height" constant="40" id="uNu-tc-TwH"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="LocationLogo"/>
+                                                <state key="normal" backgroundImage="save"/>
                                                 <connections>
                                                     <action selector="pressSave:" destination="Eb8-En-9LJ" eventType="touchUpInside" id="8rE-Gs-iha"/>
                                                 </connections>
@@ -554,6 +554,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LocationLogo" width="57" height="57"/>
+        <image name="clear" width="40" height="40"/>
+        <image name="history" width="40" height="40"/>
+        <image name="save" width="40" height="40"/>
+        <image name="scan" width="40" height="40"/>
+        <image name="setting" width="40" height="40"/>
     </resources>
 </document>
