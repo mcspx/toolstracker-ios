@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F2DBA4F21BCD9C9D0040C710"
-               BuildableName = "toolstracker.app"
+               BuildableName = "Tools Tracker.app"
                BlueprintName = "toolstracker"
                ReferencedContainer = "container:toolstracker.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F2DBA4F21BCD9C9D0040C710"
-            BuildableName = "toolstracker.app"
+            BuildableName = "Tools Tracker.app"
             BlueprintName = "toolstracker"
             ReferencedContainer = "container:toolstracker.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F2DBA4F21BCD9C9D0040C710"
-            BuildableName = "toolstracker.app"
+            BuildableName = "Tools Tracker.app"
             BlueprintName = "toolstracker"
             ReferencedContainer = "container:toolstracker.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F2DBA4F21BCD9C9D0040C710"
-            BuildableName = "toolstracker.app"
+            BuildableName = "Tools Tracker.app"
             BlueprintName = "toolstracker"
             ReferencedContainer = "container:toolstracker.xcodeproj">
          </BuildableReference>

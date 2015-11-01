@@ -5,6 +5,7 @@ target 'toolstracker' do
 use_frameworks!
 pod 'RealmSwift'
 pod 'SDWebImage', '~>3.7'
+pod 'SVProgressHUD'
 end
 
 target 'toolstrackerTests' do

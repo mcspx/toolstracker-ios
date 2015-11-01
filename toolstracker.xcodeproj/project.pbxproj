@@ -34,7 +34,6 @@
 		21D3F74A1BDB5DA700FD6EEC /* QRCodeReader.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21D3F7471BDB5DA700FD6EEC /* QRCodeReader.framework.dSYM */; };
 		21D3F74B1BDB5DA700FD6EEC /* SwiftyJSON.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21D3F7481BDB5DA700FD6EEC /* SwiftyJSON.framework.dSYM */; };
 		21D3F74D1BDB710600FD6EEC /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D3F74C1BDB710600FD6EEC /* HistoryModel.swift */; };
-		21D3F7511BDBE2A100FD6EEC /* SVProgressHUD.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21D3F7501BDBE2A100FD6EEC /* SVProgressHUD.framework.dSYM */; };
 		21D3F7571BDBE3A600FD6EEC /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D3F7561BDBE3A600FD6EEC /* SVProgressHUD.framework */; };
 		21D3F7591BDBEC4C00FD6EEC /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D3F7581BDBEC4C00FD6EEC /* HistoryTableViewCell.swift */; };
 		576F83F42DE8925E9FAFF5C3 /* Pods_toolstracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23ABD1DA05614D26F13B463A /* Pods_toolstracker.framework */; };
@@ -84,7 +83,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				21D3F7511BDBE2A100FD6EEC /* SVProgressHUD.framework.dSYM in CopyFiles */,
 				21D3F7491BDB5DA700FD6EEC /* Alamofire.framework.dSYM in CopyFiles */,
 				21D3F74A1BDB5DA700FD6EEC /* QRCodeReader.framework.dSYM in CopyFiles */,
 				21D3F74B1BDB5DA700FD6EEC /* SwiftyJSON.framework.dSYM in CopyFiles */,
@@ -127,7 +125,6 @@
 		21D3F7471BDB5DA700FD6EEC /* QRCodeReader.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = QRCodeReader.framework.dSYM; path = Carthage/Build/iOS/QRCodeReader.framework.dSYM; sourceTree = "<group>"; };
 		21D3F7481BDB5DA700FD6EEC /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyJSON.framework.dSYM; path = Carthage/Build/iOS/SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
 		21D3F74C1BDB710600FD6EEC /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryModel.swift; path = Model/HistoryModel.swift; sourceTree = "<group>"; };
-		21D3F7501BDBE2A100FD6EEC /* SVProgressHUD.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SVProgressHUD.framework.dSYM; path = Carthage/Build/iOS/SVProgressHUD.framework.dSYM; sourceTree = "<group>"; };
 		21D3F7561BDBE3A600FD6EEC /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		21D3F7581BDBEC4C00FD6EEC /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		23ABD1DA05614D26F13B463A /* Pods_toolstracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_toolstracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,7 +278,6 @@
 			children = (
 				21BE8C3B1BDCCCF20065BFAA /* ToolStrackerBridgingHeader.h */,
 				21BE8C311BDCCC2E0065BFAA /* MGSwipeTableCell */,
-				21D3F7501BDBE2A100FD6EEC /* SVProgressHUD.framework.dSYM */,
 				21D3F7461BDB5DA700FD6EEC /* Alamofire.framework.dSYM */,
 				21D3F7471BDB5DA700FD6EEC /* QRCodeReader.framework.dSYM */,
 				21D3F7481BDB5DA700FD6EEC /* SwiftyJSON.framework.dSYM */,
@@ -416,7 +412,7 @@
 				TargetAttributes = {
 					F2DBA4F21BCD9C9D0040C710 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 2SHNCSE4JX;
+						DevelopmentTeam = 43R49L78WG;
 					};
 					F2DBA5061BCD9C9D0040C710 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -501,7 +497,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/QRCodeReader.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 			);
 			outputPaths = (
 			);
@@ -723,7 +718,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: BROADBAND EDUCATION PTE LTD";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -745,7 +740,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: BROADBAND EDUCATION PTE LTD";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

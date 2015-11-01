@@ -1,4 +1,3 @@
 github "Alamofire/Alamofire" ~> 2.0
 github "SwiftyJSON/SwiftyJSON"
 github "yannickl/QRCodeReader.swift" >= 5.2.0
-github "TransitApp/SVProgressHUD"
