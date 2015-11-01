@@ -13,7 +13,6 @@ import AVFoundation
 import SVProgressHUD
 import SDWebImage
 
-
 class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelegate , MGSwipeTableCellDelegate{
     @IBOutlet var tbvHistory: UITableView!
 
@@ -22,14 +21,14 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
 
     let realm = try! Realm()
     @IBAction func pressClear(sender: AnyObject) {
-        let alert = UIAlertController(title: "", message: "Do you want to clear?", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Tools Tracking", message: "Do you want to clear history ?", preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: {action in
             try! self.realm.write({
                  self.realm.delete(self.realm.objects(HistoryModel))
-                self.tbvHistory.reloadData()
+                 self.tbvHistory.reloadData()
             })
         }))
-        alert.addAction(UIAlertAction(title: "cancel", style: .Cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
         presentViewController(alert, animated: true, completion: nil)
 
     }
@@ -160,8 +159,9 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
         cell.lblDetail.text = regisTime
         cell.lblTATAll.text = TATAll
         cell.delegate = self
-        cell.rightButtons = [MGSwipeButton(title: "Delete", backgroundColor: UIColor.redColor())]
+        cell.rightButtons = [MGSwipeButton(title: "Remove", backgroundColor: UIColor.redColor())]
         cell.rightSwipeSettings.transition = .Rotate3D
+        
         return cell
     }
 
