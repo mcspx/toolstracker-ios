@@ -114,22 +114,20 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
         let serviceCode = history.serviceCode
         let regisTime = history.regisTime
         let TATAll = history.TATAll
-
-
         let condition1 = history.condition1
         let condition3 = history.condition3
 
         if(condition1 == "R"){
-            cell.TATState.backgroundColor = UIColor.redColor()
+            cell.imgTATState.image = UIImage(named: "R")
         }
         if(condition1 == "G"){
-            cell.TATState.backgroundColor = UIColor.greenColor()
+            cell.imgTATState.image = UIImage(named: "G")
         }
         if(condition1 == "Y"){
-            cell.TATState.backgroundColor = UIColor.yellowColor()
+            cell.imgTATState.image = UIImage(named: "Y")
         }
-        if(condition1 == "X"){
-            cell.TATState.backgroundColor = UIColor.whiteColor()
+        if(condition1 == "N"){
+            cell.imgTATState.image = UIImage(named: "N")
         }
 
         var img:UIImage!

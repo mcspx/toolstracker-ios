@@ -12,7 +12,7 @@ import UIKit
 class HistoryTableViewCell: MGSwipeTableCell {
 
 
-    @IBOutlet var TATState: UILabel!
+    @IBOutlet var imgTATState: UIImageView!
     @IBOutlet var lblTATAll: UILabel!
     @IBOutlet var lblDetail: UILabel!
     @IBOutlet var lblHeader: UILabel!
