@@ -16,11 +16,15 @@ import SDWebImage
 class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelegate , MGSwipeTableCellDelegate{
     @IBOutlet var tbvHistory: UITableView!
 
-    lazy var reader: QRCodeReaderViewController = QRCodeReaderViewController(cancelButtonTitle: "Cancel", coderReader: QRCodeReader(metadataObjectTypes: [AVMetadataObjectTypeQRCode]), showTorchButton: true)
+    lazy var reader: QRCodeReaderViewController = QRCodeReaderViewController(cancelButtonTitle: "", coderReader: QRCodeReader(metadataObjectTypes: [AVMetadataObjectTypeQRCode]), showTorchButton: true ,showSwitchCameraButton: false)
+    
+
+    
 
 
     let realm = try! Realm()
     @IBAction func pressClear(sender: AnyObject) {
+
         let alert = UIAlertController(title: "Tools Tracking", message: "Do you want to clear history ?", preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: {action in
             try! self.realm.write({
@@ -31,10 +35,13 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
         alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
         presentViewController(alert, animated: true, completion: nil)
 
+        
+
     }
 
     
     @IBAction func pressScan(sender: AnyObject) {
+         reader.setImageCancelButton(UIImage(named: "cancel")!)
         if QRCodeReader.supportsMetadataObjectTypes() {
             reader.modalPresentationStyle = .FormSheet
             reader.delegate               = self
@@ -89,6 +96,8 @@ class HistoryViewController: UIViewController , QRCodeReaderViewControllerDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+
         // Do any additional setup after loading the view.
     }
 

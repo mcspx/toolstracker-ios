@@ -404,6 +404,7 @@
 				TargetAttributes = {
 					F2DBA4F21BCD9C9D0040C710 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 43R49L78WG;
 					};
 					F2DBA5061BCD9C9D0040C710 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -707,19 +708,20 @@
 			baseConfigurationReference = BBC510288B8E5513AEAAF4FE /* Pods-toolstracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Monchai Saipin (2SHNCSE4JX)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Monchai Saipin (2SHNCSE4JX)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = toolstracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mstack.toolstracker;
 				PRODUCT_NAME = "Tools Tracker";
-				PROVISIONING_PROFILE = "5ae3d973-aa6d-49da-8c74-2441cfa52b19";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = ToolStrackerBridgingHeader.h;
 			};
 			name = Debug;
@@ -729,19 +731,20 @@
 			baseConfigurationReference = 28399C48961BB9435D1842C2 /* Pods-toolstracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Monchai Saipin (2SHNCSE4JX)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Monchai Saipin (2SHNCSE4JX)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = toolstracker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mstack.toolstracker;
 				PRODUCT_NAME = "Tools Tracker";
-				PROVISIONING_PROFILE = "5ae3d973-aa6d-49da-8c74-2441cfa52b19";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = ToolStrackerBridgingHeader.h;
 			};
 			name = Release;

@@ -213,6 +213,10 @@ public class QRCodeReaderViewController: UIViewController {
     view.addSubview(cancelButton)
   }
 
+    public func setImageCancelButton(image:UIImage){
+        self.cancelButton.setImage(image, forState: .Normal)
+    }
+
   private func setupAutoLayoutConstraints() {
     let views = ["cameraView": cameraView, "cancelButton": cancelButton]
 

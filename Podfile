@@ -6,7 +6,7 @@ use_frameworks!
 pod 'RealmSwift'
 pod 'SDWebImage', '~>3.7'
 pod 'SVProgressHUD'
-pod 'QRCodeReader.swift', '~> 5.2.0'
+pod 'QRCodeReader.swift', :git => 'https://github.com/jassadakorn/QRCodeReader.swift.git'
 end
 
 target 'toolstrackerTests' do

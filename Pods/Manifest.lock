@@ -1,25 +1,34 @@
 PODS:
   - QRCodeReader.swift (5.2.0)
-  - Realm (0.96.1):
-    - Realm/Headers (= 0.96.1)
-  - Realm/Headers (0.96.1)
-  - RealmSwift (0.96.1):
-    - Realm (= 0.96.1)
+  - Realm (0.96.2):
+    - Realm/Headers (= 0.96.2)
+  - Realm/Headers (0.96.2)
+  - RealmSwift (0.96.2):
+    - Realm (= 0.96.2)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
   - SVProgressHUD (1.1.3)
 
 DEPENDENCIES:
-  - QRCodeReader.swift (~> 5.2.0)
+  - QRCodeReader.swift (from `https://github.com/jassadakorn/QRCodeReader.swift.git`)
   - RealmSwift
   - SDWebImage (~> 3.7)
   - SVProgressHUD
 
+EXTERNAL SOURCES:
+  QRCodeReader.swift:
+    :git: https://github.com/jassadakorn/QRCodeReader.swift.git
+
+CHECKOUT OPTIONS:
+  QRCodeReader.swift:
+    :commit: 461bb9164246269daeee80a3c4564ed85463b27b
+    :git: https://github.com/jassadakorn/QRCodeReader.swift.git
+
 SPEC CHECKSUMS:
   QRCodeReader.swift: b678a94534bcf4b5223543a1400f321063dbcf2f
-  Realm: d05e4621f67fb1c36acd4e573ac5b52a407fc2cc
-  RealmSwift: 6c96a72b385027d9593b69f6821c697fe843eb68
+  Realm: 3ce8448151c571e90b85002d984d7f93f54fc8a3
+  RealmSwift: 485599fe54e35461c4a0daa7d01d8fbf11424873
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
 
