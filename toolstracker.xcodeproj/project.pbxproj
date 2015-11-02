@@ -16,7 +16,6 @@
 		211D46F91BDA15B100DCA324 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D46F71BDA15B100DCA324 /* Config.swift */; };
 		211D46FB1BDA1BB000DCA324 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D46FA1BDA1BB000DCA324 /* ResultViewController.swift */; };
 		211D46FC1BDA1BB000DCA324 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D46FA1BDA1BB000DCA324 /* ResultViewController.swift */; };
-		21A342761BDA269D00830372 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A342741BDA269D00830372 /* QRCodeReader.framework */; };
 		21A342771BDA269D00830372 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A342751BDA269D00830372 /* SwiftyJSON.framework */; };
 		21A342781BDA277800830372 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211D46DB1BDA0C1900DCA324 /* Alamofire.framework */; };
 		21A342791BDA277800830372 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A342741BDA269D00830372 /* QRCodeReader.framework */; };
@@ -31,10 +30,8 @@
 		21D3F7421BDB5D0D00FD6EEC /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D3F7401BDB5D0D00FD6EEC /* Realm.framework */; };
 		21D3F7431BDB5D0D00FD6EEC /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D3F7411BDB5D0D00FD6EEC /* RealmSwift.framework */; };
 		21D3F7491BDB5DA700FD6EEC /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21D3F7461BDB5DA700FD6EEC /* Alamofire.framework.dSYM */; };
-		21D3F74A1BDB5DA700FD6EEC /* QRCodeReader.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21D3F7471BDB5DA700FD6EEC /* QRCodeReader.framework.dSYM */; };
 		21D3F74B1BDB5DA700FD6EEC /* SwiftyJSON.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21D3F7481BDB5DA700FD6EEC /* SwiftyJSON.framework.dSYM */; };
 		21D3F74D1BDB710600FD6EEC /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D3F74C1BDB710600FD6EEC /* HistoryModel.swift */; };
-		21D3F7571BDBE3A600FD6EEC /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D3F7561BDBE3A600FD6EEC /* SVProgressHUD.framework */; };
 		21D3F7591BDBEC4C00FD6EEC /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D3F7581BDBEC4C00FD6EEC /* HistoryTableViewCell.swift */; };
 		576F83F42DE8925E9FAFF5C3 /* Pods_toolstracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23ABD1DA05614D26F13B463A /* Pods_toolstracker.framework */; };
 		F2DBA4F71BCD9C9D0040C710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBA4F61BCD9C9D0040C710 /* AppDelegate.swift */; };
@@ -84,7 +81,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 				21D3F7491BDB5DA700FD6EEC /* Alamofire.framework.dSYM in CopyFiles */,
-				21D3F74A1BDB5DA700FD6EEC /* QRCodeReader.framework.dSYM in CopyFiles */,
 				21D3F74B1BDB5DA700FD6EEC /* SwiftyJSON.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +118,6 @@
 		21D3F7401BDB5D0D00FD6EEC /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		21D3F7411BDB5D0D00FD6EEC /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		21D3F7461BDB5DA700FD6EEC /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
-		21D3F7471BDB5DA700FD6EEC /* QRCodeReader.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = QRCodeReader.framework.dSYM; path = Carthage/Build/iOS/QRCodeReader.framework.dSYM; sourceTree = "<group>"; };
 		21D3F7481BDB5DA700FD6EEC /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyJSON.framework.dSYM; path = Carthage/Build/iOS/SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
 		21D3F74C1BDB710600FD6EEC /* HistoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryModel.swift; path = Model/HistoryModel.swift; sourceTree = "<group>"; };
 		21D3F7561BDBE3A600FD6EEC /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
@@ -149,8 +144,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21D3F7571BDBE3A600FD6EEC /* SVProgressHUD.framework in Frameworks */,
-				21A342761BDA269D00830372 /* QRCodeReader.framework in Frameworks */,
 				21A342771BDA269D00830372 /* SwiftyJSON.framework in Frameworks */,
 				211D46DC1BDA0C1900DCA324 /* Alamofire.framework in Frameworks */,
 				21BE8C2C1BDCBE370065BFAA /* IQKeyboardManagerSwift.framework in Frameworks */,
@@ -279,7 +272,6 @@
 				21BE8C3B1BDCCCF20065BFAA /* ToolStrackerBridgingHeader.h */,
 				21BE8C311BDCCC2E0065BFAA /* MGSwipeTableCell */,
 				21D3F7461BDB5DA700FD6EEC /* Alamofire.framework.dSYM */,
-				21D3F7471BDB5DA700FD6EEC /* QRCodeReader.framework.dSYM */,
 				21D3F7481BDB5DA700FD6EEC /* SwiftyJSON.framework.dSYM */,
 				21BE8C261BDCBE2D0065BFAA /* IQKeyboardManagerSwift.xcodeproj */,
 				211D46D11BDA094500DCA324 /* Model */,
@@ -412,7 +404,6 @@
 				TargetAttributes = {
 					F2DBA4F21BCD9C9D0040C710 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 43R49L78WG;
 					};
 					F2DBA5061BCD9C9D0040C710 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -495,7 +486,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/QRCodeReader.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
@@ -717,8 +707,8 @@
 			baseConfigurationReference = BBC510288B8E5513AEAAF4FE /* Pods-toolstracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: BROADBAND EDUCATION PTE LTD";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Monchai Saipin (2SHNCSE4JX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Monchai Saipin (2SHNCSE4JX)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -729,7 +719,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mstack.toolstracker;
 				PRODUCT_NAME = "Tools Tracker";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5ae3d973-aa6d-49da-8c74-2441cfa52b19";
 				SWIFT_OBJC_BRIDGING_HEADER = ToolStrackerBridgingHeader.h;
 			};
 			name = Debug;
@@ -739,8 +729,8 @@
 			baseConfigurationReference = 28399C48961BB9435D1842C2 /* Pods-toolstracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: BROADBAND EDUCATION PTE LTD";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Monchai Saipin (2SHNCSE4JX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Monchai Saipin (2SHNCSE4JX)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -751,7 +741,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mstack.toolstracker;
 				PRODUCT_NAME = "Tools Tracker";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5ae3d973-aa6d-49da-8c74-2441cfa52b19";
 				SWIFT_OBJC_BRIDGING_HEADER = ToolStrackerBridgingHeader.h;
 			};
 			name = Release;

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>QRCodeReader.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Realm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>24A2B89A5419FC926A83C3D7395C3C01</key>
+		<key>83AF4191DAA474CB68C39060591BDCFB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9666688CB41B38A9914616144C9C7A3E</key>
+		<key>943EE8E31FB5B459C4F3A26058E42265</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A064B75A9838606659BB57FE5AC8A101</key>
+		<key>AB0F3EC25CAAAB7769238118607319B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4C3548D7B26B2D4636CB1F44180C522</key>
+		<key>AD99AD1BFB29D5D602C41828E0619996</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F291BD1A9D27794AEF50B00DB8EF347F</key>
+		<key>B47041F209147AE8B2FEC7A15CBED603</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E39875C328FA30E2F2D7968F3C2D0F42</key>
 		<dict>
 			<key>primary</key>
 			<true/>
