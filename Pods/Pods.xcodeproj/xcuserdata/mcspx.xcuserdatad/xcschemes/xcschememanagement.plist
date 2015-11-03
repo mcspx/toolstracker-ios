@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>QRCodeReader.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Realm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,29 +29,13 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>387E0472ABC061AD50B83F99A1B9A415</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6D32526F6F401E640E48888D2E74F2FF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>77323BFF75D5A391E8835A34A32A8A10</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D57075AA07870AECAB9FC50B0282A482</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
